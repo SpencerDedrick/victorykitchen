@@ -81,9 +81,7 @@ function Footer() {
               <img src={require("../Assets/VKLogoRed.png")} alt=""></img>
             </Link>
           </div>
-          <small className="website-rights">
-            Victory Kitchen Katy <i class="far fa-copyright"></i> 2020
-          </small>
+          <small className="website-rights">Victory Kitchen Katy 2020</small>
           <div className="social-icons">
             <a
               href="https://www.facebook.com/victorykitchenkaty"
