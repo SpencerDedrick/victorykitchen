@@ -5,15 +5,12 @@ import "../../App.css";
 
 export default function Volunteer() {
   return (
-    <>
-      <h1 className="volunteer">VOLUNTEER</h1>;
+    <div className="volunteer_wrapper">
+      <div className="volunteer">
+        VOLUNTEER<h4>See below for our upcoming volunteer opportunities.</h4>
+      </div>
+      ;
       <div className="volunteer_card_wrapper">
-        <CardItem
-          src={require("../../Assets/Photo15.jpeg")}
-          text=" You can still purchase a shirt from VK! So far we have raised $100+ from your purchases! You can also help me to raise awareness by taking a selfie in your VK shirt and send it to me by this Wednesday!"
-          label="Fundraiser!"
-          path="/"
-        />
         <CardItem
           src={require("../../Assets/Photo16.jpeg")}
           text="Serving 50+ lunch for those displaced by Hurricane Laura. 
@@ -21,7 +18,7 @@ export default function Volunteer() {
 -2-3 volunteers to help package/transport 
 -1 prayer partner"
           label="September 25th"
-          path="/"
+          path="/volunteer"
         />
         <CardItem
           src={require("../../Assets/photo11.jpg")}
@@ -29,7 +26,7 @@ export default function Volunteer() {
 -sort and package Bibles and toiletries for street ministries. (5-6 volunteers)
 -1 volunteer to pick up food items for street ministries"
           label="October 3"
-          path="/"
+          path="/volunteer"
         />
         <CardItem
           src={require("../../Assets/Photo14.jpeg")}
@@ -38,10 +35,10 @@ export default function Volunteer() {
 -(5 volunteers) Serve meals, interact with community, prayer as needed.
 -1-2 volunteers to help me cook/ or prepare a dessert"
           label="October 6"
-          path="/"
+          path="/volunteer"
         />
       </div>
       ;
-    </>
+    </div>
   );
 }

@@ -26,10 +26,12 @@ h1 {
 }
 
 .cards__item {
+  min-width: 200px;
   display: flex;
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  max-height: 500px;
 }
 
 .cards__item__link {
