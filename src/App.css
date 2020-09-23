@@ -11,19 +11,32 @@
 .support,
 .volunteer {
   display: flex;
-  height: 90vh;
+  min-height: 90vh;
   align-items: center;
   justify-content: center;
 }
 
 .about {
-  background-image: url("./Assets/photo9.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./Assets/photo9.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.about p {
+  font-size: 20px;
+  width: 50%;
 }
 .ourwork {
   background-image: url("./Assets/photo2.jpg");
@@ -47,6 +60,13 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.support p {
+  margin: auto;
+  width: 60%;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .volunteer {
@@ -105,5 +125,12 @@
 
   .volunteer {
     font-size: 70px;
+  }
+  .about p {
+    width: 90%;
+  }
+
+  .support p {
+    width: 90%;
   }
 }

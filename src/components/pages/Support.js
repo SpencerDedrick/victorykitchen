@@ -7,7 +7,23 @@ export default function Support() {
   return (
     <>
       <div className="support">
-        SUPPORT OUR WORK
+        SUPPORT OUR MISSION
+        <p>
+          In these times, it has become more important than ever to look out for
+          each other, show kindness to your neighbor and lend a helping hand to
+          someone in need. Victory Kitchen is collecting funds to provide hot
+          meals for the homeless community within Houston, Katy and the
+          surrounding areas. All contributions will go towards providing warm,
+          nutritious meals to our street friends. We are also collecting bibles
+          and toiletry supplies to give out during our street ministries.
+        </p>
+        <p>
+          Currently there are three ways to support the work Victory Kitchen
+          does. You can volunteer at a Victory Kitchen event, purchase an
+          official Victory Kitchen Shirt, or donate directly via paypal. Without
+          your generosity this would not be possible. Thank you for your
+          support. God bless.
+        </p>
         <div className="hero-btns">
           <a
             className="support--btn"
@@ -22,6 +38,7 @@ export default function Support() {
           <a
             className="support--btn"
             href="https://www.ofnoreputation.com/collections/causes/products/victory-kitchen"
+            target="_blank"
             rel="noopener noreferrer"
           >
             Shop
