@@ -16,8 +16,6 @@ export default function Support() {
           surrounding areas. All contributions will go towards providing warm,
           nutritious meals to our street friends. We are also collecting bibles
           and toiletry supplies to give out during our street ministries.
-        </p>
-        <p>
           Currently there are three ways to support the work Victory Kitchen
           does. You can volunteer at a Victory Kitchen event, purchase an
           official Victory Kitchen Shirt, or donate directly via paypal. Without
