@@ -20,6 +20,29 @@ export default class SimpleSlider extends Component {
       autoplay: true,
       autoplaySpeed: 5000,
       className: "simple__slider",
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
     };
     return (
       <div className="slider-wrapper">
