@@ -26,12 +26,10 @@ h1 {
 }
 
 .cards__item {
-  min-width: 200px;
   display: flex;
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  max-height: 500px;
 }
 
 .cards__item__link {
@@ -68,7 +66,7 @@ h1 {
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background-color: red;
+  background-color: #1f98f4;
   box-sizing: border-box;
 }
 

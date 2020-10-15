@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "./Button";
+import Dropdown from "./Dropdown";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [dropdownAbout, setDropdownAbout] = useState(false);
+  const [dropdownWork, setDropdownWork] = useState(false);
+  const [dropdownSupport, setDropdownSupport] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -15,6 +19,49 @@ function Navbar() {
       setButton(false);
     } else {
       setButton(true);
+    }
+  };
+
+  const onMouseEnter = (event) => {
+    if (event.target.classList.contains("nav-item-about")) {
+      if (window.innerWidth < 960) {
+        setDropdownAbout(false);
+      } else {
+        setDropdownAbout(true);
+      }
+    }
+    if (event.target.classList.contains("nav-item-work")) {
+      if (window.innerWidth < 960) {
+        setDropdownWork(false);
+      } else {
+        setDropdownWork(true);
+      }
+    }
+    if (event.target.classList.contains("nav-item-support")) {
+      if (window.innerWidth < 960) {
+        setDropdownSupport(false);
+      } else {
+        setDropdownSupport(true);
+      }
+    }
+  };
+
+  const onMouseLeave = (event) => {
+    /* if (event.target.classList.contains("nav-item")) {
+      if (window.innerWidth < 960) {
+        setDropdownAbout(false);
+      } else {
+        setDropdownAbout(false);
+      }
+    } */
+    if (window.innerWidth < 960) {
+      setDropdownAbout(false);
+      setDropdownWork(false);
+      setDropdownSupport(false);
+    } else {
+      setDropdownAbout(false);
+      setDropdownWork(false);
+      setDropdownSupport(false);
     }
   };
 
@@ -28,50 +75,96 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
               src={require("../Assets/VKLogoWhite.png")}
               alt="Victory Kitchen"
             ></img>
-          </Link>
+          </NavLink>
+
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
+
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/ourwork"
+              <NavLink
+                exact={true}
+                activeClassName="activePage"
+                to="/"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Our Work
-              </Link>
+                Home
+              </NavLink>
             </li>
-
-            <li className="nav-item">
-              <Link
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
+              <NavLink
+                to="/about"
+                activeClassName="activePage"
+                className="nav-links nav-item-about"
+                onClick={closeMobileMenu}
+              >
+                About <i class="fas fa-sort-down"></i>
+              </NavLink>
+              {dropdownAbout && <Dropdown menu="about" />}
+            </li>
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
+              <NavLink
+                to="/ourwork"
+                activeClassName="activePage"
+                className="nav-links nav-item-work"
+                onClick={closeMobileMenu}
+              >
+                Our Work <i class="fas fa-sort-down"></i>
+              </NavLink>
+              {dropdownWork && <Dropdown menu="work" />}
+            </li>
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
+              <NavLink
                 to="/support"
+                activeClassName="activePage"
+                className="nav-links nav-item-support"
+                onClick={closeMobileMenu}
+              >
+                Support VK <i class="fas fa-sort-down"></i>
+              </NavLink>
+              {dropdownSupport && <Dropdown menu="support" />}
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/support"
+                activeClassName="activePage"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Support Us
-              </Link>
+                Donate
+              </NavLink>
             </li>
           </ul>
           {button && (
-            <Button buttonStyle="btn--outline" path="support">
-              Support Us
-            </Button>
+            <a
+              className="support--btn"
+              buttonStyle="btn--Primary"
+              buttonSize="btn--large"
+              href="https://www.paypal.com/paypalme/victorykitchen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donate
+            </a>
           )}
         </div>
       </nav>

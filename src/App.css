@@ -14,80 +14,7 @@
   min-height: 90vh;
   align-items: center;
   justify-content: center;
-}
-
-.about {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url("./Assets/photo9.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.about p {
-  font-size: 20px;
-  width: 50%;
-  text-align: justify;
-  margin-top: 10px;
-}
-.ourwork {
-  background-image: url("./Assets/photo2.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.support {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("./Assets/photo11.jpg") center center/cover no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 90px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.support p {
-  margin: auto;
-  width: 60%;
-  margin-top: 5px;
-  font-size: 20px;
-  text-align: justify;
-}
-
-.volunteer {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("./Assets/photo12.jpeg") center center/cover no-repeat;
-  /*  background-position: 0px -50px; */
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.volunteer h4 {
-  font-size: 50px;
+  overflow-x: hidden;
 }
 
 .volunteer_card_wrapper {
@@ -112,7 +39,7 @@
   text-decoration: none;
   color: #fff;
   border: 1px solid #fff;
-  margin: 6px;
+  margin: 10px;
 }
 
 .support--btn:hover {

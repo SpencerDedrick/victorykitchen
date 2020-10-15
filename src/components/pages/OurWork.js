@@ -1,7 +1,11 @@
 import React from "react";
-
+import "./OurWork.css";
 import "../../App.css";
 
 export default function OurWork() {
-  return <h1 className="ourwork">Our Work</h1>;
+  return (
+    <div className="ourwork">
+      Our Work<p>COMING SOON</p>
+    </div>
+  );
 }

@@ -1,0 +1,34 @@
+.counter {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("../Assets/photo1.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  display: flex;
+}
+
+.counter-wrapper {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.counter-container {
+  text-align: center;
+  width: 50%;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}

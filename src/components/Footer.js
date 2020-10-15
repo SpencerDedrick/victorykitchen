@@ -8,7 +8,7 @@ function Footer() {
     <div className="footer-container">
       <section className="footer-subscription">
         <p className="footer-subscription-heading">
-          Join the Victory newsletter to see how we're bringing God's Victory to
+          Join the Victory Newsletter to see how we're bringing God's Victory to
           Katy TX.
         </p>
         <div className="input-areas">
@@ -27,15 +27,15 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/support">Our Story</Link>
-            <Link to="/">Meet the Team</Link>
-            <Link to="/">Partners</Link>
+            <Link to="/about">Our Story</Link>
+            <Link to="/about">Meet the Team</Link>
+            <Link to="/about">Partners</Link>
           </div>
           <div className="footer-link-items">
             <h2>Our Work</h2>
-            <Link to="/support">Our Model</Link>
-            <Link to="/">Testemonials</Link>
-            <Link to="/">Gallery</Link>
+            <Link to="/ourwork">Our Model</Link>
+            <Link to="/ourwork">Testemonials</Link>
+            <Link to="/ourwork">Gallery</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">

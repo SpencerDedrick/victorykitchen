@@ -1,5 +1,6 @@
 import React from "react";
 import CardItem from "../CardItem";
+import "./Volunteer.css";
 
 import "../../App.css";
 
@@ -7,9 +8,12 @@ export default function Volunteer() {
   return (
     <div className="volunteer_wrapper">
       <div className="volunteer">
-        VOLUNTEER<h4>See below for our upcoming volunteer opportunities.</h4>
+        <div className="volunteer-text">
+          <h1>Volunteer</h1>
+          <h4>See below for our upcoming volunteer opportunities.</h4>
+        </div>
       </div>
-      ;
+      <div className="volunteer-overlay"></div>
       <div className="volunteer_card_wrapper">
         <CardItem
           src={require("../../Assets/Photo16.jpeg")}
@@ -38,7 +42,6 @@ export default function Volunteer() {
           path="/volunteer"
         />
       </div>
-      ;
     </div>
   );
 }
