@@ -1,6 +1,6 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import Volunteer from "./Volunteer";
+/* import { Switch, Route } from "react-router-dom";
+import Volunteer from "./Volunteer"; */
 import "./Support.css";
 import { Button } from "../Button";
 

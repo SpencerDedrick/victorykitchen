@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CountUp, { startAnimation } from "react-countup";
+/* import CountUp, { startAnimation } from "react-countup"; */
 import VisibilitySensor from "react-visibility-sensor";
 import "./Counter.css";
 

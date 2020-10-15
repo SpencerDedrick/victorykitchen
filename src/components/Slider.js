@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Slide from "./Slide";
-import CardItem from "./CardItem";
+/* import Slide from "./Slide";
+import CardItem from "./CardItem"; */
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Cards.css";
