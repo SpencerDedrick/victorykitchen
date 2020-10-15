@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-/* import CountUp, { startAnimation } from "react-countup"; */
+import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import "./Counter.css";
 
 function Counter() {
-  const [count, setCount] = useState(true);
+  /* const [count, setCount] = useState(true); */
   const [start1, setStart1] = useState(0);
   const [start2, setStart2] = useState(0);
 
@@ -47,7 +47,7 @@ function Counter() {
           }}
         >
           {({ countUpRef, start }) => (
-            <VisibilitySensor onChange={start} active={count} delayedCall>
+            <VisibilitySensor onChange={start} active={true} delayedCall>
               <div className="counter-container">
                 <span ref={countUpRef} />
                 <p>MEALS SERVED</p>
