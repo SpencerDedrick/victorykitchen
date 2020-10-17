@@ -1,0 +1,22 @@
+.gallery {
+  background: #242424;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery h1 {
+  margin: 20px;
+}
+
+.gallery-frame {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  max-height: 50vh;
+}
+
+.gallery--btn {
+  margin: auto;
+}

@@ -42,7 +42,7 @@
 .image-fade {
   position: absolute;
   border-radius: 8px;
-  object-fit: contain;
+  object-fit: cover;
   z-index: 2;
   background: rgba(0, 0, 0, 0.5);
   width: calc(100% - 20px);
@@ -67,7 +67,8 @@
   color: #242424;
 }
 .slide-1 .slick-slide-image {
-  margin-top: -100px;
+  margin-top: -150px;
+  max-height: 200%;
 }
 
 .slide-2 .slick-slide-image {

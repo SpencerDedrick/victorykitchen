@@ -49,6 +49,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .app {
+    overflow: hidden;
+  }
   .volunteer {
     background-position: center;
   }
@@ -56,6 +59,7 @@
   .volunteer {
     font-size: 70px;
   }
+
   .about p {
     width: 90%;
   }

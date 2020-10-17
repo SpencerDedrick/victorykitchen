@@ -38,3 +38,10 @@
 .volunteer h1 {
   font-size: 100px;
 }
+
+@media screen and (max-width: 960px) {
+  .volunteer {
+    background-position: center;
+    font-size: 70px;
+  }
+}

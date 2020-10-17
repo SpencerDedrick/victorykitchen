@@ -180,6 +180,13 @@
   }
 }
 
+.footer-footer {
+  color: #fff;
+  font-size: 8px;
+  text-decoration: none;
+  bottom: 0;
+}
+
 @media screen and (max-width: 960px) {
   .email {
     display: none;

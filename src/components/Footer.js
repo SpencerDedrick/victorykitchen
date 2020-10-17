@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Footerfooter from "./Footerfooter";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
 
@@ -35,7 +36,7 @@ function Footer() {
             <h2>Our Work</h2>
             <Link to="/ourwork">Our Model</Link>
             <Link to="/ourwork">Testemonials</Link>
-            <Link to="/ourwork">Gallery</Link>
+            <Link to="/gallery">Gallery</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
@@ -92,33 +93,37 @@ function Footer() {
             >
               <i className="fab fa-facebook-f"></i>
             </a>
-            <Link
-              to="/"
+            <a
+              href="https://www.facebook.com/victorykitchenkaty"
               target="_blank"
+              rel="noopener noreferrer"
               className="social-icon-link instagram"
               aria-label="Instagram"
             >
               <i className="fab fa-instagram"></i>
-            </Link>
-            <Link
-              to="/"
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCflKAppokbWFnczi_D4HDcA"
               target="_blank"
+              rel="noopener noreferrer"
               className="social-icon-link youtube"
-              aria-label="Facebook"
+              aria-label="Youtube"
             >
               <i className="fab fa-youtube"></i>
-            </Link>
-            <Link
-              to="/"
+            </a>
+            <a
+              href="https://www.facebook.com/victorykitchenkaty"
               target="_blank"
+              rel="noopener noreferrer"
               className="social-icon-link twitter"
-              aria-label="Facebook"
+              aria-label="Twitter"
             >
               <i className="fab fa-twitter"></i>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
+      <Footerfooter />
     </div>
   );
 }

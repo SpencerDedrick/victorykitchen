@@ -13,7 +13,7 @@ function Home2() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Donate
+          Donate Now
         </a>
       </div>
     </div>

@@ -38,10 +38,9 @@ function Counter() {
           start={start1}
           end={3500}
           redraw={false}
-          preserveValue={true}
           duration={2.5}
           useEasing={true}
-          onEnd={({ pauseResume, reset, start, update }) => update()}
+          onEnd={({ update }) => update()}
           onUpdate={() => {
             onUpdate();
           }}
@@ -62,7 +61,7 @@ function Counter() {
           duration={2.5}
           onEnd={({ pauseResume }) => pauseResume()}
         >
-          {({ countUpRef, start, setCount }) => (
+          {({ countUpRef, start }) => (
             <VisibilitySensor onChange={start} delayedCall>
               <div className="counter-container">
                 <span ref={countUpRef} />

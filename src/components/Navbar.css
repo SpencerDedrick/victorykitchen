@@ -108,7 +108,6 @@
     justify-content: start;
     top: 80px;
     left: -100%;
-
     transition: all 0.5s ease;
     background-color: #242424;
   }
