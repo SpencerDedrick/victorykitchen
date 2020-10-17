@@ -31,23 +31,34 @@ export default class SimpleSlider extends Component {
           },
         },
         {
+<<<<<<< HEAD
           breakpoint: 990,
+=======
+          breakpoint: 900,
+>>>>>>> 178713f5181afb2ffed0e52c646b550130fb3592
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
           },
         },
         {
+<<<<<<< HEAD
           breakpoint: 700,
+=======
+          breakpoint: 480,
+>>>>>>> 178713f5181afb2ffed0e52c646b550130fb3592
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
           },
+<<<<<<< HEAD
         },
         // You can unslick at a given breakpoint now by adding:
         // settings: "unslick"
         // instead of a settings object
       ],
+=======
+>>>>>>> 178713f5181afb2ffed0e52c646b550130fb3592
     };
     return (
       <div className="slider-wrapper">
