@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Story from "./components/pages/Story";
+import Team from "./components/pages/Team";
 import Support from "./components/pages/Support";
 import OurWork from "./components/pages/OurWork";
 import Footer from "./components/Footer";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/gallery" component={Gallery} />
           <Route path="/support" component={Support} />
           <Route path="/volunteer" component={Volunteer} />
+          <Route path="/team" component={Team} />
         </Switch>
         <Footer />
       </Router>

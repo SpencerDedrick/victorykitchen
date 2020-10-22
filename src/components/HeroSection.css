@@ -41,6 +41,9 @@ video {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.hero-underline-red {
+  border-bottom: 6px solid rgba;
+}
 .hero-btns {
   margin-top: 10px;
 }
@@ -74,4 +77,18 @@ video {
   .btn {
     width: 100%;
   }
+}
+
+@media (max-width: 599px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 900px) {
+}
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
 }

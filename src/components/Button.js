@@ -2,9 +2,9 @@ import React from "react";
 import "./Button.css";
 import { Link } from "react-router-dom";
 
-const STYLES = ["btn--primary", "btn--outline", "btn--outline-black"];
+const STYLES = ["btn-primary", "btn-red", "btn-outline", "btn-outline-black"];
 
-const SIZES = ["btn--medium", "btn--large"];
+const SIZES = ["btn-medium", "btn-large"];
 export const Button = ({
   children,
   type,
@@ -19,15 +19,23 @@ export const Button = ({
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  return (
+  return type === "link" ? (
     <Link to={path} className="btn-mobile">
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}
-        type={type}
       >
         {children}
       </button>
     </Link>
+  ) : (
+    <a
+      href={path}
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
   );
 };

@@ -1,15 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
-.home,
 .about,
-.ourwork,
-.support,
-.volunteer {
+.ourwork {
   display: flex;
   min-height: 90vh;
   align-items: center;
@@ -17,18 +15,8 @@
   overflow-x: hidden;
 }
 
-.volunteer_card_wrapper {
-  display: flex;
-  padding: 20px;
-  flex-wrap: wrap;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-
-.volunteer_card_wrapper .cards__item {
-  object-fit: contain;
-  margin-right: 10px;
-  min-height: 0;
+ul {
+  list-style-type: none;
 }
 
 .support--btn {
@@ -51,20 +39,5 @@
 @media screen and (max-width: 960px) {
   .app {
     overflow: hidden;
-  }
-  .volunteer {
-    background-position: center;
-  }
-
-  .volunteer {
-    font-size: 70px;
-  }
-
-  .about p {
-    width: 90%;
-  }
-
-  .support p {
-    width: 90%;
   }
 }

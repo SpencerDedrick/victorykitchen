@@ -42,7 +42,7 @@ function Dropdown(props) {
               );
             })
           : MenuItemsSupport.map((item, index) => {
-              return (
+              return item.type === "link" ? (
                 <li key={index}>
                   <Link
                     className={item.className}
@@ -52,6 +52,18 @@ function Dropdown(props) {
                     {item.title}
                   </Link>
                 </li>
+              ) : (
+                <li>
+                  <a
+                    className={item.className}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setClick(false)}
+                  >
+                    {item.title}
+                  </a>
+                </li>
               );
             })}
       </ul>
@@ -60,3 +72,21 @@ function Dropdown(props) {
 }
 
 export default Dropdown;
+/* type === "link" ? (
+  <Link to={path} className="btn-mobile">
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  </Link>
+) : (
+  <a
+    href={path}
+    className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {children}
+  </a> */

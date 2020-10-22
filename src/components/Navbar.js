@@ -104,7 +104,7 @@ function Navbar() {
               onMouseLeave={onMouseLeave}
             >
               <NavLink
-                to="/about"
+                to="/story"
                 activeClassName="activePage"
                 className="nav-links nav-item-about"
                 onClick={closeMobileMenu}
@@ -119,7 +119,7 @@ function Navbar() {
               onMouseLeave={onMouseLeave}
             >
               <NavLink
-                to="/ourwork"
+                to="/gallery"
                 activeClassName="activePage"
                 className="nav-links nav-item-work"
                 onClick={closeMobileMenu}

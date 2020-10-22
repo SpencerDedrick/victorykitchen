@@ -1,0 +1,131 @@
+.hero-section {
+  max-width: 100vw;
+  height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
+  min-height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.hero-story {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../Assets/photo3.jpg");
+}
+
+.hero-volunteer {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../Assets/photo12.jpeg");
+}
+
+.hero-support {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../Assets/photo2.jpg");
+}
+
+.hero-home {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../Assets/photo17.webp");
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-video {
+  display: none;
+}
+
+.hero-text {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.hero-header {
+  margin: auto;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 8vw, 4rem);
+  text-align: center;
+}
+
+.hero-underline-red {
+  border-bottom: 6px rgb(160, 44, 44) solid;
+  margin-bottom: 20px;
+}
+
+.hero-underline {
+  border-bottom: 3px #fff solid;
+  margin-bottom: 20px;
+}
+.hero-text-large {
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.verse {
+  font-size: clamp(20px, 2.5vw, 1.5rem);
+}
+.hero-buttons {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 599px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 900px) {
+  .hero-text,
+  .hero-text-large {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  hero-text {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+}
+
+@media (min-width: 1800px) {
+}

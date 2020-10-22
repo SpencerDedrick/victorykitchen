@@ -1,137 +1,142 @@
-.white-panel {
-  background: white;
+.panel {
+  height: 100%;
+  max-width: 100vw;
   min-height: 400px;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.panel * {
+  margin: 10px 10px 30px 10px;
+}
+
+.panel-white {
+  background: white;
   color: #242424;
-  text-align: left;
 }
 
-.header-red {
-  color: rgba(160, 44, 44);
+.panel-black {
+  background-color: #242424;
+  color: #fff;
 }
-.panel-container {
-  max-width: 800px;
-  margin: auto;
+
+.panel-image {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url("../Assets/photo1.jpg") center center/cover no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  background-attachment: fixed;
 }
+
+.panel-image-red {
+  background: linear-gradient(
+      to bottom,
+      rgba(160, 44, 44, 0.4),
+      rgba(160, 44, 44, 0.8)
+    ),
+    url("../Assets/Photo14.jpeg") center center/cover no-repeat;
+  display: flex;
+  background-attachment: fixed;
+}
+
 .panel-header {
-  font-size: 60px;
-  padding-top: 30px;
-}
-.white-panel .panel-header {
-  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 30px;
   text-align: center;
-}
-
-.center {
-  margin: auto;
-}
-
-.white-panel .panel-header-small {
-  opacity: 0.5;
-  text-align: center;
-}
-
-.border-top {
-  margin-top: 30px;
-  border-top: 2px #242424 solid;
-}
-
-.border-bottom-red {
-  margin-bottom: 30px;
-  border-bottom: 4px rgba(160, 44, 44) solid;
-}
-.border-bottom {
   margin-bottom: 20px;
-  border-bottom: 4px #242424 solid;
 }
 
-.border-bottom-white {
-  border-bottom: 2px #fff solid;
+.panel-header-fade {
+  opacity: 0.7;
+}
+.panel-header-white {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
 }
 
-.panel-text-small {
-  padding: 20px 0;
-  font-size: 20px;
-  line-height: 150%;
-  z-index: 1;
+.panel-text-red {
+  color: rgb(160, 44, 44);
 }
 
 .panel-text {
-  font-size: 30px;
+  font-size: clamp(1.75rem, 3.25vw, 2.25rem);
   padding-top: 20px;
   z-index: 1;
 }
 
-.image-panel {
-  min-height: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  /*   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); */
-  object-fit: contain;
-  color: #fff;
+.panel-text-left {
   text-align: left;
 }
 
-.panel-story1 {
-  background: url("../Assets/photo7.jpg") center center/cover no-repeat;
-}
-.panel-story2 {
-  background: url("../Assets/photo4.jpg") center center/cover no-repeat;
-}
-
-.image-panel .panel-fade {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 500px;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
+.panel-text-small {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 150%;
+  max-width: 1000px;
 }
 
-.image-panel .panel-header {
+.panel-text-white {
   color: #fff;
-  z-index: 1;
 }
 
-.image-panel .panel-text {
-  color: #fff;
-  font-size: 30px;
-  z-index: 1;
+.panel-text-em {
+  font-style: italic;
 }
 
-.panel--btn {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.panel-icon {
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+}
+.panel-underline-white {
+  border-bottom: 6px #fff solid;
+  margin-bottom: 20px;
+}
+
+.panel-underline-red {
+  border-bottom: 6px rgb(160, 44, 44) solid;
+  margin-bottom: 20px;
+}
+
+.panel-button-white {
   font-size: 20px;
   background-color: transparent;
   border-radius: 2px;
   padding: 12px 26px;
   text-decoration: none;
-  color: #242424;
-  border: 1px solid #242424;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-.panel--btn {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-size: 20px;
-  background-color: transparent;
-  border-radius: 2px;
-  padding: 12px 26px;
-  text-decoration: none;
-  color: #242424;
-  border: 1px solid #242424;
+.panel-photo {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+@media (max-width: 599px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 900px) {
+  .panel-text-small {
+    margin: 10px 100px 30px 100px;
+    text-align: left;
+  }
+
+  .panel-text {
+    text-align: left;
+    margin: 10px 100px 30px 100px;
+  }
+}
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
 }

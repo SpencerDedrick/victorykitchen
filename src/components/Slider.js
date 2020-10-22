@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-/* import Slide from "./Slide";
-import CardItem from "./CardItem"; */
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Cards.css";
 import "./Slider.css";
 import slidesData from "../Info";
 
@@ -14,62 +12,32 @@ export default class SimpleSlider extends Component {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      arrow: false,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      className: "simple__slider",
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true,
-          },
-        },
-        {
-          breakpoint: 990,
-
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 700,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ],
     };
     return (
-      <div className="slider-wrapper">
-        <h2>Our Long Term Visions & Goals</h2>
-        <div className="slider">
-          <Slider {...settings}>
-            {slidesData.map((slide) => (
-              <div className={`slick-slide slide-${slide.id}`} key={slide.id}>
-                <div className="slick-slide-image-wrapper">
-                  <img
-                    className="slick-slide-image"
-                    src={slide.image}
-                    alt="cat"
-                  />
-                  <div className="image-fade"></div>
-                </div>
-                <label className="slick-slide-label">{slide.label}</label>
-              </div>
-            ))}
-          </Slider>
-        </div>
+      <div>
+        <h2> Single Item</h2>
+        <Slider {...settings}>
+          <div>
+            <h3>1</h3>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
       </div>
     );
   }
