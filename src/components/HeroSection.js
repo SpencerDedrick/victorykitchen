@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
 import "./HeroSectionMobile.css";
-import { Button } from "./Button";
+/* import { Button } from "./Button";
 import Slide from "react-reveal/Slide";
-import Fade from "react-reveal/Fade";
+import Fade from "react-reveal/Fade"; */
 
 function HeroSection(props) {
   return (
