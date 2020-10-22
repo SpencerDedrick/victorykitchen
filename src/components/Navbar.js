@@ -143,7 +143,7 @@ function Navbar() {
               </NavLink>
               {dropdownSupport && <Dropdown menu="support" />}
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 to="/support"
                 activeClassName="activePage"
@@ -152,14 +152,14 @@ function Navbar() {
               >
                 Donate
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           {button && (
             <a
               className="support--btn"
               buttonStyle="btn--Primary"
               buttonSize="btn--large"
-              href="https://www.paypal.com/paypalme/victorykitchen"
+              href="https://www.paypal.com/paypalme/victorykitchen?fbclid=IwAR1AFI6dsMfXdj2_v46VJDTMJXS_qBT4Ofvok0Z5dNhzN9boRAO8_sgZ6N4"
               target="_blank"
               rel="noopener noreferrer"
             >

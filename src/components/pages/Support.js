@@ -61,7 +61,7 @@ export default function Support() {
               className="btn"
               buttonStyle="btn-outline"
               buttonSize="btn-large"
-              path="story"
+              path="https://www.paypal.com/paypalme/victorykitchen?fbclid=IwAR1AFI6dsMfXdj2_v46VJDTMJXS_qBT4Ofvok0Z5dNhzN9boRAO8_sgZ6N4"
               type="anchor"
             >
               Donate
@@ -70,7 +70,7 @@ export default function Support() {
               className="btn"
               buttonStyle="btn-red"
               buttonSize="btn-large"
-              path="story"
+              path="shttps://www.ofnoreputation.com/products/victory-kitchen?fbclid=IwAR29PVGPLnj4s4h5X3b6-KjTllNNCnjua9mETPJC4xLYVlE8jHsAzJziSYI"
               type="anchor"
             >
               Shop
