@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MenuItemsAbout, MenuItemsSupport, MenuItemsWork } from "./MenuItems";
 import "./Dropdown.css";
 
@@ -17,13 +17,14 @@ function Dropdown(props) {
           ? MenuItemsAbout.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link
+                  <NavLink
                     className={item.className}
                     to={item.path}
                     onClick={() => setClick(false)}
+                    activeClassName="activePage"
                   >
                     {item.title}
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })
@@ -31,26 +32,26 @@ function Dropdown(props) {
           ? MenuItemsWork.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link
+                  <NavLink
                     className={item.className}
                     to={item.path}
                     onClick={() => setClick(false)}
                   >
                     {item.title}
-                  </Link>
+                  </NavLink>
                 </li>
               );
             })
           : MenuItemsSupport.map((item, index) => {
               return item.type === "link" ? (
                 <li key={index}>
-                  <Link
+                  <NavLink
                     className={item.className}
                     to={item.path}
                     onClick={() => setClick(false)}
                   >
                     {item.title}
-                  </Link>
+                  </NavLink>
                 </li>
               ) : (
                 <li>

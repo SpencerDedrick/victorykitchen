@@ -16,7 +16,7 @@
   text-decoration: none;
 }
 
-.btn-primary {
+.btn-white {
   background: #fffff7;
   color: #242424;
   border: 1px solid var(--primary);
@@ -52,9 +52,9 @@
   font-size: 20px;
 }
 
-.btn-primary:hover {
-  background: #242424;
-  color: #fff;
+.btn-white:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: #242424;
   border: 1px solid #fff;
 }
 .btn-outline:hover {
@@ -64,7 +64,7 @@
 .btn-red:hover {
   background: rgba(160, 44, 44, 0.5);
   color: #fff;
-  border: 1px solid rgb(160, 44, 44, 0.5);
+  border: 1px solid rgba(160, 44, 44, 0.5);
 }
 
 .btn-outline-black:hover {

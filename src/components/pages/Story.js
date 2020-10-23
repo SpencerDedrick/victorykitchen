@@ -9,24 +9,26 @@ function Story() {
   return (
     <div className="story">
       <HeroSection class="hero-story">
-        <Fade top>
-          <h1 className="hero-header">
-            <span className="hero-underline-red">Victory</span>
-          </h1>
-        </Fade>
-        <Fade left>
-          <p className="hero-text-large">
-            "A success in a struggle against difficulties or an obstacle"
-          </p>
-        </Fade>
-        <Fade right>
-          <p className="hero-text">
-            "For the <span className="hero-underline">LORD</span> your God is
-            the one who goes with you to fight for you against your enemies to
-            give you <span className="hero-underline">VICTORY</span>."
-            <p className="verse"> - Deuteronomy 20:4</p>
-          </p>
-        </Fade>
+        <div className="hero-wrapper">
+          <Fade top>
+            <h1 className="hero-header">
+              <span className="hero-underline-red">Victory</span>
+            </h1>
+          </Fade>
+          <Fade left>
+            <p className="hero-text-large">
+              "A success in a struggle against difficulties or an obstacle"
+            </p>
+          </Fade>
+          <Fade right>
+            <p className="hero-text">
+              "For the <span className="hero-underline">LORD</span> your God is
+              the one who goes with you to fight for you against your enemies to
+              give you <span className="hero-underline">VICTORY</span>."
+              <p className="verse"> - Deuteronomy 20:4</p>
+            </p>
+          </Fade>
+        </div>
       </HeroSection>
 
       <Panel class="panel-white">

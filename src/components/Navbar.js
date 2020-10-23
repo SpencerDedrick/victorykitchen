@@ -23,7 +23,7 @@ function Navbar() {
   };
 
   const onMouseEnter = (event) => {
-    if (event.target.classList.contains("nav-item-about")) {
+    /* if (event.target.classList.contains("nav-item-about")) {
       if (window.innerWidth < 960) {
         setDropdownAbout(false);
       } else {
@@ -43,17 +43,17 @@ function Navbar() {
       } else {
         setDropdownSupport(true);
       }
-    }
+    } */
   };
 
   const onMouseLeave = (event) => {
-    /* if (event.target.classList.contains("nav-item")) {
+    /* *******if (event.target.classList.contains("nav-item")) {
       if (window.innerWidth < 960) {
         setDropdownAbout(false);
       } else {
         setDropdownAbout(false);
       }
-    } */
+    } *******
     if (window.innerWidth < 960) {
       setDropdownAbout(false);
       setDropdownWork(false);
@@ -62,7 +62,7 @@ function Navbar() {
       setDropdownAbout(false);
       setDropdownWork(false);
       setDropdownSupport(false);
-    }
+    }*/
   };
 
   useEffect(() => {
@@ -109,7 +109,7 @@ function Navbar() {
                 className="nav-links nav-item-about"
                 onClick={closeMobileMenu}
               >
-                About <i class="fas fa-sort-down"></i>
+                About {/* <i class="fas fa-sort-down"></i> */}
               </NavLink>
               {dropdownAbout && <Dropdown menu="about" />}
             </li>
@@ -124,7 +124,7 @@ function Navbar() {
                 className="nav-links nav-item-work"
                 onClick={closeMobileMenu}
               >
-                Our Work <i class="fas fa-sort-down"></i>
+                Our Work {/* <i class="fas fa-sort-down"></i> */}
               </NavLink>
               {dropdownWork && <Dropdown menu="work" />}
             </li>
@@ -139,7 +139,7 @@ function Navbar() {
                 className="nav-links nav-item-support"
                 onClick={closeMobileMenu}
               >
-                Support VK <i class="fas fa-sort-down"></i>
+                Support VK {/* <i class="fas fa-sort-down"></i> */}
               </NavLink>
               {dropdownSupport && <Dropdown menu="support" />}
             </li>

@@ -17,11 +17,3 @@ function Row() {
 }
 
 export default Row;
-{
-  /* <img
-              key={slide.id}
-              className={`row__poster `}
-              src={slide.image}
-              alt={slide.text}
-            ></img> */
-}

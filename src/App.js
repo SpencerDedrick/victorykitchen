@@ -12,10 +12,12 @@ import Footer from "./components/Footer";
 import Volunteer from "./components/pages/Volunteer";
 import Gallery from "./components/pages/Gallery";
 import ScrollToTop from "./components/ScrollToTop";
+import Menus from "./components/Menu";
 function App() {
   return (
     <div className="app">
       <Router className=".app-router">
+        <Menus />
         <Navbar />
         <ScrollToTop />
 

@@ -28,7 +28,7 @@ function Home() {
 
         <p className="hero-text hero-text-home">
           “The King will reply, ‘Truly I tell you, whatever you did for one of
-          the least of the se brothers and sisters of mine, you did for me."
+          the least of these brothers and sisters of mine, you did for me."
           <br></br>
           <span className=" verse">-Matthew 25:40</span>
         </p>

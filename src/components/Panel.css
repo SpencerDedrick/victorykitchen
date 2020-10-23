@@ -9,12 +9,20 @@
   text-align: center;
 }
 
+.panel-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .panel * {
   margin: 10px 10px 30px 10px;
 }
 
 .panel-white {
-  background: white;
+  background-color: white;
   color: #242424;
 }
 
@@ -54,7 +62,7 @@
 .panel-header-white {
   color: #fff;
   text-transform: uppercase;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   text-align: center;
 }
 
@@ -63,7 +71,7 @@
 }
 
 .panel-text {
-  font-size: clamp(1.75rem, 3.25vw, 2.25rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   padding-top: 20px;
   z-index: 1;
 }
@@ -73,7 +81,7 @@
 }
 
 .panel-text-small {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 150%;
   max-width: 1000px;
 }
@@ -133,6 +141,11 @@
   .panel-text {
     text-align: left;
     margin: 10px 100px 30px 100px;
+  }
+
+  .panel-buttons {
+    display: inline-block;
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) {

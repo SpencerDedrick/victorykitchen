@@ -3,6 +3,9 @@ import React from "react";
 function Footerfooter() {
   return (
     <div>
+      <p className="footer-footer">
+        This website designed for demonstration purposes
+      </p>
       <a
         className="footer-footer"
         href="https://github.com/spencerdedrick"

@@ -30,7 +30,7 @@ export default function Support() {
           <Fade right>
             <p className="hero-text">
               "And do not forget to do good and to share with others, for with
-              such sacrifices God is pleased."{" "}
+              such sacrifices God is pleased."
               <p className="hero-verse"> - Hebrews 13:16</p>
             </p>
           </Fade>
@@ -50,10 +50,8 @@ export default function Support() {
         <Panel class="panel-image">
           <p className="panel-text panel-text-white">
             Currently there are three ways to support the work Victory Kitchen
-            does. You can volunteer at a Victory Kitchen event, purchase an
-            official Victory Kitchen Shirt, or donate directly via paypal.
-            Without your generosity this would not be possible. Thank you for
-            your support.
+            does. Without your generosity this would not be possible. Thank you
+            for your support.
           </p>
 
           <div className="panel-buttons">
@@ -76,11 +74,11 @@ export default function Support() {
               Shop
             </Button>
             <Button
-              className="btn'"
-              buttonstyle="btn-primary"
+              className="btn"
+              buttonStyle="btn-white"
               buttonSize="btn-large"
-              path="/volunteer"
-              type="link"
+              path="shttps://www.ofnoreputation.com/products/victory-kitchen?fbclid=IwAR29PVGPLnj4s4h5X3b6-KjTllNNCnjua9mETPJC4xLYVlE8jHsAzJziSYI"
+              type="anchor"
             >
               Volunteer
             </Button>

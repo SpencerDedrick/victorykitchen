@@ -2,20 +2,38 @@ import React from "react";
 import Panel from "../Panel";
 import "./Team.css";
 import { Button } from "../Button";
+import HeroSection from "../HeroSection";
+import Fade from "react-reveal/Fade";
 function Story() {
   return (
     <div className="team">
-      <Panel class="panel-white">
-        <h1 class="panel-header">Our Team</h1>
-        <p class="panel-text">
-          The team at Victory Kitchen is full of individuals that are passionate
-          about helping others, and dedicated to multiply God's Kingdom.
-        </p>
-      </Panel>
+      <HeroSection class="hero-team">
+        <Fade top>
+          <h1 className="hero-header">
+            <span className="hero-underline-red">Our Team</span>
+          </h1>
+        </Fade>
+        <Fade left>
+          <p className="hero-text-large">
+            The Victory Kitchen team is full of individuals that are passionate
+            about helping others, and dedicated to multiplying God's Kingdom.
+          </p>
+        </Fade>
+        <Fade right>
+          <p className="hero-text">
+            "I appeal to you, brothers and sisters, in the name of our Lord
+            Jesus Christ, that all of you agree with one another in what you say
+            and that there be no divisions among you, but that you be perfectly
+            united in mind and thought. "{" "}
+            <p className="hero-verse"> - I Corinthians 1:10</p>
+          </p>
+        </Fade>
+      </HeroSection>
+
       <Panel class="panel-black ">
         <div class="panel-split">
           <div className="panel-split1">
-            <p className="panel-text panel-text-white ">
+            <p className="panel-header panel-text-white ">
               Phoebe Khan | Founder
             </p>
           </div>
