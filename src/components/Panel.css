@@ -16,7 +16,9 @@
   align-items: center;
   width: 100%;
 }
-
+.background-img {
+  transform: translate3d(0, 0, 0);
+}
 .panel * {
   margin: 10px 10px 30px 10px;
 }
@@ -36,6 +38,8 @@
     url("../Assets/photo1.jpg") center center/cover no-repeat;
   display: flex;
   background-attachment: fixed;
+  background-size: cover;
+  transform: translate3d(0, 0, 0);
 }
 
 .panel-image-red {
