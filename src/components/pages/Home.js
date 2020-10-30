@@ -10,6 +10,10 @@ import Fade from "react-reveal/Fade";
 function Home() {
   return (
     <div className="home">
+      {/* ===========
+      HERO SECTION 
+      =============*/}
+
       <HeroSection class="hero-home">
         <video
           src="/videos/video.mp4"
@@ -35,17 +39,16 @@ function Home() {
 
         <div className="hero-buttons">
           <Button
-            className="btn"
-            buttonStyle="btn-outline"
-            buttonSize="btn-large"
+            buttonStyle="btn--light"
+            buttonSize="btn--medium"
             path="story"
             type="link"
           >
             Learn More
           </Button>
           <Button
-            buttonstyle="btn-Primary"
-            buttonSize="btn-large"
+            buttonStyle="btn--primary"
+            buttonSize="btn--medium"
             path="support"
             type="link"
           >
@@ -54,44 +57,58 @@ function Home() {
         </div>
       </HeroSection>
 
-      <Panel class="white-panel">
-        <p className="panel-text-small panel-text-em">
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
+      <Panel class="panel panel--light">
+        <p className="panel__text panel__text--small panel__text--italic panel__text--fade ">
           Our Mission is to help people overcome chronic or situational poverty
           by building lasting relationships and providing the most basic
           necessity of human life, food.
         </p>
-
         <Button
           type="link"
-          buttonStyle="btn-outline-black"
-          buttonSize="btn-large"
+          buttonStyle="btn--outline-primary"
+          buttonSize="btn--large"
           path="story"
         >
           Our Story
         </Button>
       </Panel>
 
-      <Panel class="panel-image">
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
+      <Panel
+        class="panel panel--image panel--image-dark"
+        imagePath="../Assets/photo1.jpg"
+      >
         <Counter number={3500} label="Meals Served" />
         <Counter number={1200} label="Friends Blessed" />
         <Button
           type="link"
-          buttonStyle="btn-outline"
-          buttonSize="btn-large"
+          buttonStyle="btn--outline-light"
+          buttonSize="btn--large"
           path="ourwork"
         >
           See Our Work
         </Button>
       </Panel>
-      <Panel class="panel-black">
-        <i class="far fa-heart panel-icon"></i>
-        <i class="fas fa-church panel-icon"></i>
-        <i class="fas fa-cross panel-icon"></i>
-        <p className="panel-text-small panel-text-white">
+
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
+      <Panel class="panel panel--primary">
+        <div>
+          <i class="far fa-heart panel-icon "></i>
+          <i class="fas fa-church panel-icon"></i>
+          <i class="fas fa-cross panel-icon"></i>
+        </div>
+        <p className=" panel__text panel__text--large panel__text--light">
           Our Vision is to help people find victory in their lives.
         </p>
 
-        <p className="panel-text-small ">
+        <p className="panel__text panel__text--small panel__text--light  ">
           We do this by helping individuals meet their most basic needs while
           simultaneously collaborating with established organizations within the
           Katy area, and beyond. Through our work, we hope to encourage and
@@ -99,15 +116,20 @@ function Home() {
           the cycle of chronic or situational poverty.
         </p>
       </Panel>
-      <Panel class="panel-image-red">
-        <h1 class="panel-header-white ">
+
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
+
+      <Panel class="panel panel--image panel--image-primary">
+        <h1 class="panel__text panel__text--header panel__text--light">
           <span className="panel-underline-white">
             Your Donations Make A Difference
           </span>
         </h1>
         <Button
           type="anchor"
-          buttonStyle="btn-outline"
+          buttonStyle="btn--outline-light"
           buttonSize="btn-large"
           path="https://www.paypal.com/paypalme/victorykitchen"
         >

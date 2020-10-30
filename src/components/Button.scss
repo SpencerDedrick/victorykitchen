@@ -1,0 +1,144 @@
+$light: #fffff7;
+$dark: #242424;
+$primary: #a02c2c;
+
+/*===========
+BUTTON STYLES
+============*/
+
+.btn {
+  padding: 1em 0.5em;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  transition: all 250ms ease-in;
+  margin: 0.5em;
+  font-size: 1.25em;
+  max-width: 250px;
+
+  /*SOLID BUTTONS*/
+
+  &--light {
+    background-color: $light;
+    color: $dark;
+    &::after {
+      background-color: $dark;
+    }
+
+    &:hover {
+      color: $light;
+    }
+  }
+
+  &--dark {
+    background-color: $dark;
+    color: $light;
+
+    &::after {
+      background-color: $light;
+    }
+
+    &:hover {
+      color: $dark;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $light;
+
+    &::after {
+      background-color: $light;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+  }
+
+  &:hover::after {
+    transform: scalex(1);
+  }
+
+  /*OUTLINE BUTTONS*/
+  &--outline {
+    &-light {
+      background: transparent;
+      color: $light;
+      border: 1px solid $light;
+      &:hover {
+        background-color: $light;
+        color: $dark;
+      }
+    }
+
+    &-dark {
+      background: transparent;
+      color: $dark;
+      border: 1px solid $dark;
+      &:hover {
+        background-color: $dark;
+        color: $light;
+      }
+    }
+
+    &-primary {
+      background: transparent;
+      color: $primary;
+      border: 1px solid $primary;
+
+      &:hover {
+        background-color: $primary;
+        color: $light;
+      }
+    }
+  }
+
+  /*BUTTON SIZES*/
+  &--small {
+    font-size: 1rem;
+    padding: 0.25em 1em;
+  }
+
+  &--medium {
+    font-size: 1.25rem;
+    padding: 0.5em 0.75em;
+  }
+
+  &--large {
+    font-size: 1.5rem;
+    padding: 0.5em 1.25em;
+  }
+}
+
+@media (max-width: 599px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 900px) {
+}
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1800px) {
+}

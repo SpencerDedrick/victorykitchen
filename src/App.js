@@ -16,6 +16,7 @@ import Menus from "./components/Menu";
 function App() {
   return (
     <div className="app">
+      {console.log("hello")}
       <Router className=".app-router">
         <Menus />
         <Navbar />

@@ -1,26 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import "./Counter.css";
 
 function Counter(props) {
-  /* const [num, setNum] = useState(0);
-
-  const onUpdate = () => {
-    setNum(props.number);
-  }; */
+  const [shouldCount, setShouldCount] = useState(true);
 
   return (
     <div className="counter">
       <CountUp
+        preserveValue={true}
         start={0}
         end={props.number}
         redraw={true}
         duration={1.5}
         useEasing={true}
+        onEnd={() => {
+          setShouldCount(false);
+        }}
       >
         {({ countUpRef, start }) => (
-          <VisibilitySensor onChange={start} delayedCall>
+          <VisibilitySensor onChange={start} active={shouldCount} delayedCall>
             <div className="counter-container">
               <span ref={countUpRef} />
               <p className="counter-label">{props.label}</p>
