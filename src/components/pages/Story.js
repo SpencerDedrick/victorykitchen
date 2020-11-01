@@ -30,29 +30,34 @@ function Story() {
           </Fade>
         </div>
       </HeroSection>
-
-      <Panel class="panel-white">
-        <p className=" panel-text">
-          <span className="panel-underline-red">Our Mission</span> is to tackle
-          the issue of poverty by meeting the most basic and fundamental
-          necessity of human life, food.
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
+      <Panel class="panel panel--light">
+        <p className=" panel__text panel__text--dark panel__text--large">
+          <span className="panel__underline">Our Mission</span> is to tackle the
+          issue of poverty by meeting the most basic and fundamental necessity
+          of human life, food.
         </p>
       </Panel>
-      <Panel class="panel-image-red">
-        <h1 className="panel-header-white   ">
-          <span className="">Creating a Story of Victory</span>
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
+      <Panel class="panel panel--primary">
+        <h1 className="panel__text--header panel__text--light">
+          <span className="panel__underline">Creating a Story of Victory</span>
         </h1>
-        <p className="panel-text-small panel-text-white">
+        <p className="panel__text panel__text--small panel__text--light">
           I want Victory Kitchen to represent more than just a meal but rather a
           bridge to a holistic approach to ending/ decreasing poverty in our
           community. I ask myself; how can I rehabilitate our visitors but also
           rejuvenate our community? How can Victory Kitchen succeed to the point
           it is no longer needed?
-          <p className="panel-text panel-text-white">
+          <p className="panel__text panel__text--large panel__text--light">
             The heart of Victory Kitchen is based on Matthew 25:37-40
           </p>
         </p>
-        <p className="panel-text-small panel-text-white ">
+        <p className="panel__text panel__text--small panel__text--light ">
           My personal mission is to represent the character and love of Jesus to
           those around me. I believe good deeds create good will among those I
           come across and that in turn opens more doors for people to hear the
@@ -60,18 +65,21 @@ function Story() {
         </p>
         <Button
           type="link"
-          buttonStyle="btn-outline"
+          buttonStyle="btn--outline-light"
           buttonSize="btn-large"
           path="/team"
         >
           Meet Our Team
         </Button>
       </Panel>
+      {/* ===========
+      CONTENT PANEL 
+      =============*/}
       <Panel class="panel-black">
-        <h1 className="panel-header border-bottom-white">
+        <h1 className="panel__text--header panel__text--dark">
           Our Longterm Goals & Objectives
         </h1>
-        <ul className=" panel-text-left panel-text-small">
+        <ul className=" panel__text panel__text--small panel__text--dark">
           <li>
             1. Provide nutritious meal (lunch/dinner) to individuals and
             families experiencing food insecurity or homelessness

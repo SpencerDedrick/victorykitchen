@@ -35,30 +35,36 @@ export default function Support() {
             </p>
           </Fade>
         </HeroSection>
-        <Panel class="panel-white">
-          <p className="panel-text">
+        {/* ===========
+      CONTENT PANEL 
+      =============*/}
+        <Panel class="panel--light">
+          <p className="panel__text panel__text--small panel__text--dark">
             Victory Kitchen is collecting funds to provide hot meals for the
             homeless community within Houston, Katy and the surrounding areas.
             All contributions will go towards providing warm, nutritious meals
             to our street friends.
           </p>
-          <p className="panel-text">
+          <p className="panel__text panel__text--small panel__text--dark">
             We are also collecting bibles and toiletry supplies to give out
             during our street ministries.
           </p>
         </Panel>
-        <Panel class="panel-image">
-          <p className="panel-text panel-text-white">
+        {/* ===========
+      CONTENT PANEL 
+      =============*/}
+        <Panel class="panel--primary">
+          <p className="panel__text panel__text--small panel__text--light">
             Currently there are three ways to support the work Victory Kitchen
             does. Without your generosity this would not be possible. Thank you
             for your support.
           </p>
 
-          <div className="panel-buttons">
+          <div className="panel__buttons">
             <Button
               className="btn"
-              buttonStyle="btn-outline"
-              buttonSize="btn-large"
+              buttonStyle="btn--outline-light"
+              buttonSize="btn--medium"
               path="https://www.paypal.com/paypalme/victorykitchen?fbclid=IwAR1AFI6dsMfXdj2_v46VJDTMJXS_qBT4Ofvok0Z5dNhzN9boRAO8_sgZ6N4"
               type="anchor"
             >
@@ -66,8 +72,8 @@ export default function Support() {
             </Button>
             <Button
               className="btn"
-              buttonStyle="btn-red"
-              buttonSize="btn-large"
+              buttonStyle="btn--outline-dark"
+              buttonSize="btn--medium"
               path="shttps://www.ofnoreputation.com/products/victory-kitchen?fbclid=IwAR29PVGPLnj4s4h5X3b6-KjTllNNCnjua9mETPJC4xLYVlE8jHsAzJziSYI"
               type="anchor"
             >
@@ -75,8 +81,8 @@ export default function Support() {
             </Button>
             <Button
               className="btn"
-              buttonStyle="btn-white"
-              buttonSize="btn-large"
+              buttonStyle="btn--light"
+              buttonSize="btn--medium"
               path="shttps://www.ofnoreputation.com/products/victory-kitchen?fbclid=IwAR29PVGPLnj4s4h5X3b6-KjTllNNCnjua9mETPJC4xLYVlE8jHsAzJziSYI"
               type="anchor"
             >

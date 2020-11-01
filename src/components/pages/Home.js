@@ -39,7 +39,7 @@ function Home() {
 
         <div className="hero-buttons">
           <Button
-            buttonStyle="btn--light"
+            buttonStyle="btn--outline-light"
             buttonSize="btn--medium"
             path="story"
             type="link"
@@ -99,10 +99,10 @@ function Home() {
       CONTENT PANEL 
       =============*/}
       <Panel class="panel panel--primary">
-        <div>
-          <i class="far fa-heart panel-icon "></i>
-          <i class="fas fa-church panel-icon"></i>
-          <i class="fas fa-cross panel-icon"></i>
+        <div class="panel__icon-container">
+          <i class="far fa-heart panel__icon "></i>
+          <i class="fas fa-church panel__icon"></i>
+          <i class="fas fa-cross panel__icon"></i>
         </div>
         <p className=" panel__text panel__text--large panel__text--light">
           Our Vision is to help people find victory in their lives.
