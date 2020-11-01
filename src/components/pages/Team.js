@@ -30,36 +30,37 @@ function Story() {
         </Fade>
       </HeroSection>
 
-      <Panel class="panel-black ">
-        <div class="panel-split">
-          <div className="panel-split1">
-            <p className="panel-header panel-text-white ">
-              Phoebe Khan | Founder
-            </p>
-          </div>
-          <div class="panel-split1 panel-underline-white">
-            <img
-              className="panel-photo"
-              src={require("../../Assets/Photo18.jpeg")}
-              alt="founder"
-            ></img>
-          </div>
-          <p class="panel-text-small panel-text-white ">
-            My personal mission is to represent the character and love of Jesus
-            to those around me. I believe good deeds create good will among
-            those I come across and that in turn opens more doors for people to
-            hear the good news of Christ than it closes.
-          </p>
-        </div>
+      <Panel class="panel--light ">
+        <p className="panel__text panel__text--header panel__text--center panel__text--dark ">
+          Phoebe Khan | Founder
+        </p>
+
+        <img
+          className="panel__photo"
+          src={require("../../Assets/Photo18.jpeg")}
+          alt="founder"
+        ></img>
+
+        <p class="panel__text panel__text--small panel__text--dark ">
+          My personal mission is to represent the character and love of Jesus to
+          those around me. I believe good deeds create good will among those I
+          come across and that in turn opens more doors for people to hear the
+          good news of Christ than it closes.
+        </p>
       </Panel>
-      <Panel class="panel-image">
-        <p class="panel-text panel-text-white">
+      <Panel
+        class="panel--image panel--image-primary"
+        style={{
+          background: `url(${require("../../Assets/photo10.jpg")}) center center/cover no-repeat`,
+        }}
+      >
+        <p class="panel__text panel__text--small panel__text--light">
           Interested in joining our team? Volunteer with us to see what Victory
           Kitchen is all about!
         </p>
         <Button
           type="link"
-          buttonStyle="btn-outline"
+          buttonStyle="btn--outline-light"
           buttonSize="btn-large"
           path="volunteer"
         >

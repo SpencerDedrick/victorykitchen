@@ -34,7 +34,7 @@ function Story() {
       CONTENT PANEL 
       =============*/}
       <Panel class="panel panel--light">
-        <p className=" panel__text panel__text--dark panel__text--large">
+        <p className=" panel__text panel__text--dark panel__text--large panel__text--center">
           <span className="panel__underline">Our Mission</span> is to tackle the
           issue of poverty by meeting the most basic and fundamental necessity
           of human life, food.
@@ -45,7 +45,7 @@ function Story() {
       =============*/}
       <Panel class="panel panel--primary">
         <h1 className="panel__text--header panel__text--light">
-          <span className="panel__underline">Creating a Story of Victory</span>
+          Creating a Story of<span className="panel__underline"> Victory</span>
         </h1>
         <p className="panel__text panel__text--small panel__text--light">
           I want Victory Kitchen to represent more than just a meal but rather a
@@ -75,11 +75,16 @@ function Story() {
       {/* ===========
       CONTENT PANEL 
       =============*/}
-      <Panel class="panel-black">
-        <h1 className="panel__text--header panel__text--dark">
+      <Panel
+        class="panel--image panel--image-dark"
+        style={{
+          background: `url(${require("../../Assets/photo7.jpg")}) center center/cover no-repeat`,
+        }}
+      >
+        <h1 className="panel__text--header panel__text--light">
           Our Longterm Goals & Objectives
         </h1>
-        <ul className=" panel__text panel__text--small panel__text--dark">
+        <ul className=" panel__text panel__text--small panel__text--light panel__text--left">
           <li>
             1. Provide nutritious meal (lunch/dinner) to individuals and
             families experiencing food insecurity or homelessness

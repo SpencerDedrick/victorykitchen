@@ -60,7 +60,7 @@ function Home() {
       {/* ===========
       CONTENT PANEL 
       =============*/}
-      <Panel class="panel panel--light">
+      <Panel class="panel panel--light panel--light__arrows">
         <p className="panel__text panel__text--small panel__text--italic panel__text--fade ">
           Our Mission is to help people overcome chronic or situational poverty
           by building lasting relationships and providing the most basic
@@ -81,7 +81,9 @@ function Home() {
       =============*/}
       <Panel
         class="panel panel--image panel--image-dark"
-        imagePath="../Assets/photo1.jpg"
+        style={{
+          background: `url(${require("../../Assets/photo1.jpg")}) center center/cover no-repeat`,
+        }}
       >
         <Counter number={3500} label="Meals Served" />
         <Counter number={1200} label="Friends Blessed" />
@@ -121,7 +123,12 @@ function Home() {
       CONTENT PANEL 
       =============*/}
 
-      <Panel class="panel panel--image panel--image-primary">
+      <Panel
+        class="panel--image panel--image-primary"
+        style={{
+          background: `url(${require("../../Assets/Photo21.jpg")}) center center/cover no-repeat`,
+        }}
+      >
         <h1 class="panel__text panel__text--header panel__text--light">
           <span className="panel-underline-white">
             Your Donations Make A Difference

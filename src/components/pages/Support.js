@@ -38,14 +38,14 @@ export default function Support() {
         {/* ===========
       CONTENT PANEL 
       =============*/}
-        <Panel class="panel--light">
-          <p className="panel__text panel__text--small panel__text--dark">
+        <Panel class="panel--dark">
+          <p className="panel__text panel__text--small panel__text--light">
             Victory Kitchen is collecting funds to provide hot meals for the
             homeless community within Houston, Katy and the surrounding areas.
             All contributions will go towards providing warm, nutritious meals
             to our street friends.
           </p>
-          <p className="panel__text panel__text--small panel__text--dark">
+          <p className="panel__text panel__text--small panel__text--light">
             We are also collecting bibles and toiletry supplies to give out
             during our street ministries.
           </p>
@@ -53,8 +53,13 @@ export default function Support() {
         {/* ===========
       CONTENT PANEL 
       =============*/}
-        <Panel class="panel--primary">
-          <p className="panel__text panel__text--small panel__text--light">
+        <Panel
+          class="panel--image panel--image-light"
+          style={{
+            background: `url(${require("../../Assets/photo4.jpg")}) center center/cover no-repeat`,
+          }}
+        >
+          <p className="panel__text panel__text--small panel__text--dark">
             Currently there are three ways to support the work Victory Kitchen
             does. Without your generosity this would not be possible. Thank you
             for your support.
@@ -63,8 +68,8 @@ export default function Support() {
           <div className="panel__buttons">
             <Button
               className="btn"
-              buttonStyle="btn--outline-light"
-              buttonSize="btn--medium"
+              buttonStyle="btn--outline-dark"
+              buttonSize="btn--small"
               path="https://www.paypal.com/paypalme/victorykitchen?fbclid=IwAR1AFI6dsMfXdj2_v46VJDTMJXS_qBT4Ofvok0Z5dNhzN9boRAO8_sgZ6N4"
               type="anchor"
             >
@@ -72,8 +77,8 @@ export default function Support() {
             </Button>
             <Button
               className="btn"
-              buttonStyle="btn--outline-dark"
-              buttonSize="btn--medium"
+              buttonStyle="btn--outline-primary"
+              buttonSize="btn--small"
               path="shttps://www.ofnoreputation.com/products/victory-kitchen?fbclid=IwAR29PVGPLnj4s4h5X3b6-KjTllNNCnjua9mETPJC4xLYVlE8jHsAzJziSYI"
               type="anchor"
             >
@@ -81,8 +86,8 @@ export default function Support() {
             </Button>
             <Button
               className="btn"
-              buttonStyle="btn--light"
-              buttonSize="btn--medium"
+              buttonStyle="btn--dark"
+              buttonSize="btn--small"
               path="shttps://www.ofnoreputation.com/products/victory-kitchen?fbclid=IwAR29PVGPLnj4s4h5X3b6-KjTllNNCnjua9mETPJC4xLYVlE8jHsAzJziSYI"
               type="anchor"
             >

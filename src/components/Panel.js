@@ -7,12 +7,7 @@ function Panel(props) {
     return require("");
   }; */
   return (
-    <div
-      className={`panel ${props.class}`}
-      /*style={{
-        background: `url(${image()}) center center/cover no-repeat `,
-      }}*/
-    >
+    <div className={`panel ${props.class} $`} style={props.style}>
       <div className={props.fade}></div>
       {props.children}
     </div>

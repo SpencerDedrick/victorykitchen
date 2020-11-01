@@ -16,6 +16,7 @@ PANEL STYLES
   align-items: center;
   text-align: center;
   z-index: 1;
+  position: relative;
 
   & * {
     margin: 0.5rem 0.5rem 2rem 0.5rem;
@@ -42,6 +43,25 @@ PANEL STYLES
 
   &--image {
     background-attachment: fixed;
+
+    &-light {
+      position: relative;
+    }
+
+    &-light::after {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 247, 0.4),
+        rgba(255, 255, 247, 0.8)
+      );
+    }
 
     &-dark {
       position: relative;
@@ -114,12 +134,14 @@ PANEL TYPOGRAPHY STYLES
 
   &--large {
     font-size: max(1.5rem, 2rem);
+    line-height: 1.2;
   }
 
   &--header {
     font-size: max(3rem, 3.5rem);
     text-transform: uppercase;
     font-size: 30px;
+    line-height: 1;
   }
 
   /*TEXT COLOR*/
@@ -141,6 +163,7 @@ PANEL TYPOGRAPHY STYLES
 
   &--center {
     text-align: center;
+    margin: auto;
   }
   /*TEXT OTHER PROPERTIES*/
   &--fade {
@@ -189,26 +212,29 @@ PANEL TYPOGRAPHY STYLES
 
 .panel__icon {
   color: white;
-  font-size: 50px;
-  width: 100px;
+  min-width: 75px;
   background: rgba(0, 0, 0, 0.4);
-  height: 100px;
+  min-height: 75px;
   border-radius: 50%;
   display: grid;
   place-items: center;
+  flex-shrink: 1;
+  font-size: max(1.5rem, 2rem);
 }
 
 .panel__icon-container {
   display: flex;
+  max-width: 100%;
+  justify-content: space-between;
 }
 
 .panel__icon + .panel__icon {
   margin-left: 50px;
 }
 
-.panel-photo {
+.panel__photo {
   width: 90%;
-  max-width: 500px;
+  max-width: 300px;
   border-radius: 20px;
   margin: auto;
 }
@@ -222,6 +248,11 @@ PANEL TYPOGRAPHY STYLES
 @media (min-width: 900px) {
   .panel__text {
     text-align: left;
+  }
+  .panel__text {
+    line-height: 1.5;
+    max-width: ch;
+    margin: 20px;
   }
 }
 @media (min-width: 1200px) {
