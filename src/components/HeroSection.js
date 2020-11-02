@@ -1,15 +1,10 @@
 import React from "react";
 import "../App.css";
-import "./HeroSectionMobile.css";
-/* import { Button } from "./Button";
-import Slide from "react-reveal/Slide";
-import Fade from "react-reveal/Fade"; */
+import "./HeroSection.scss";
 
 function HeroSection(props) {
   return (
-    <div className={`hero-container hero-section ${props.class}`}>
-      <div className="hero-wrapper">{props.children}</div>
-    </div>
+    <div className={`hero-container hero ${props.class}`}>{props.children}</div>
   );
 }
 

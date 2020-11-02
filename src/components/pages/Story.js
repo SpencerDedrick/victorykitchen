@@ -8,34 +8,40 @@ import Fade from "react-reveal/Fade";
 function Story() {
   return (
     <div className="story">
+      {/* ===========
+      HERO SECTION 
+      =============*/}
       <HeroSection class="hero-story">
-        <div className="hero-wrapper">
-          <Fade top>
-            <h1 className="hero-header">
-              <span className="hero-underline-red">Victory</span>
-            </h1>
-          </Fade>
-          <Fade left>
-            <p className="hero-text-large">
-              "A success in a struggle against difficulties or an obstacle"
+        <Fade top>
+          <h1 className="hero__text--header hero__text--light hero__text--underline--primary--thick">
+            Victory
+          </h1>
+        </Fade>
+        <Fade left>
+          <p className="hero__text hero__text--large hero__text--light">
+            "A success in a struggle against difficulties or an obstacle"
+          </p>
+        </Fade>
+        <Fade right>
+          <p className="hero__text hero__text--small hero__text--light">
+            "For the<span className="hero__text--underline--light"> LORD </span>
+            your God is the one who goes with you to fight for you against your
+            enemies to give you
+            <span className="hero__text--underline--light"> VICTORY </span>."
+            <p className="hero__text hero__text--small hero__text--light">
+              {" "}
+              - Deuteronomy 20:4
             </p>
-          </Fade>
-          <Fade right>
-            <p className="hero-text">
-              "For the <span className="hero-underline">LORD</span> your God is
-              the one who goes with you to fight for you against your enemies to
-              give you <span className="hero-underline">VICTORY</span>."
-              <p className="verse"> - Deuteronomy 20:4</p>
-            </p>
-          </Fade>
-        </div>
+          </p>
+        </Fade>
       </HeroSection>
+
       {/* ===========
       CONTENT PANEL 
       =============*/}
       <Panel class="panel panel--light">
-        <p className=" panel__text panel__text--dark panel__text--large panel__text--center">
-          <span className="panel__underline">Our Mission</span> is to tackle the
+        <p className="panel__text panel__text--dark panel__text--large panel__text--center">
+          <span className="panel__underline">Our Mission</span>is to tackle the
           issue of poverty by meeting the most basic and fundamental necessity
           of human life, food.
         </p>
@@ -45,7 +51,8 @@ function Story() {
       =============*/}
       <Panel class="panel panel--primary">
         <h1 className="panel__text--header panel__text--light">
-          Creating a Story of<span className="panel__underline"> Victory</span>
+          Creating a Story of
+          <span className="panel__underline"> Victory</span>
         </h1>
         <p className="panel__text panel__text--small panel__text--light">
           I want Victory Kitchen to represent more than just a meal but rather a
@@ -78,7 +85,7 @@ function Story() {
       <Panel
         class="panel--image panel--image-dark"
         style={{
-          background: `url(${require("../../Assets/photo7.jpg")}) center center/cover no-repeat`,
+          background: `url(${require("../../Assets/photo7.jpg")}) center center/cover no-repeat fixed`,
         }}
       >
         <h1 className="panel__text--header panel__text--light">

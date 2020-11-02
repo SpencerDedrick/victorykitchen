@@ -2,7 +2,6 @@ import React from "react";
 import "../../App.css";
 import HeroSection from "../HeroSection";
 import { Button } from "../Button";
-
 import Counter from "../Counter";
 import Panel from "../Panel";
 import Fade from "react-reveal/Fade";
@@ -20,24 +19,23 @@ function Home() {
           autoPlay
           loop
           muted
-          className="hero-video"
+          className="hero__video"
         />
         <Fade top>
           <img
             src={require("../../Assets/VKWhite.png")}
             alt=""
-            className="hero-logo"
+            className="hero__logo"
           ></img>
         </Fade>
-
-        <p className="hero-text hero-text-home">
+        <p className="hero__text hero__text--small hero__text--light">
           “The King will reply, ‘Truly I tell you, whatever you did for one of
           the least of these brothers and sisters of mine, you did for me."
           <br></br>
-          <span className=" verse">-Matthew 25:40</span>
+          <span className=" hero__text--small">-Matthew 25:40</span>
         </p>
 
-        <div className="hero-buttons">
+        <div className="hero__button-container">
           <Button
             buttonStyle="btn--outline-light"
             buttonSize="btn--medium"
@@ -82,7 +80,7 @@ function Home() {
       <Panel
         class="panel panel--image panel--image-dark"
         style={{
-          background: `url(${require("../../Assets/photo1.jpg")}) center center/cover no-repeat`,
+          background: `url(${require("../../Assets/photo1.jpg")}) center center/cover no-repeat fixed`,
         }}
       >
         <Counter number={3500} label="Meals Served" />
@@ -102,9 +100,9 @@ function Home() {
       =============*/}
       <Panel class="panel panel--primary">
         <div class="panel__icon-container">
-          <i class="far fa-heart panel__icon "></i>
-          <i class="fas fa-church panel__icon"></i>
-          <i class="fas fa-cross panel__icon"></i>
+          <i class="far fa-heart panel__icon panel__icon1 "></i>
+          <i class="fas fa-church panel__icon panel__icon2"></i>
+          <i class="fas fa-cross panel__icon panel__icon3"></i>
         </div>
         <p className=" panel__text panel__text--large panel__text--light">
           Our Vision is to help people find victory in their lives.
@@ -126,7 +124,7 @@ function Home() {
       <Panel
         class="panel--image panel--image-primary"
         style={{
-          background: `url(${require("../../Assets/Photo21.jpg")}) center center/cover no-repeat`,
+          background: `url(${require("../../Assets/Photo21.jpg")}) center center/cover no-repeat fixed`,
         }}
       >
         <h1 class="panel__text panel__text--header panel__text--light">
