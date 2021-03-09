@@ -13,7 +13,7 @@ function Counter(props) {
         start={0}
         end={props.number}
         redraw={true}
-        duration={1.5}
+        duration={2}
         useEasing={true}
         onEnd={() => {
           setShouldCount(false);

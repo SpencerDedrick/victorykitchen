@@ -29,7 +29,6 @@ function Story() {
             enemies to give you
             <span className="hero__text--underline--light"> VICTORY </span>."
             <p className="hero__text hero__text--small hero__text--light">
-              {" "}
               - Deuteronomy 20:4
             </p>
           </p>
@@ -85,7 +84,7 @@ function Story() {
       <Panel
         class="panel--image panel--image-dark"
         style={{
-          background: `url(${require("../../Assets/photo7.jpg")}) center center/cover no-repeat fixed`,
+          background: `url(${require("../../Assets/img/photo7.jpg")}) center center/cover no-repeat fixed`,
         }}
       >
         <h1 className="panel__text--header panel__text--light">

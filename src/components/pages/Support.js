@@ -59,7 +59,7 @@ export default function Support() {
       <Panel
         class="panel--image panel--image-light"
         style={{
-          background: `url(${require("../../Assets/photo4.jpg")}) center center/cover no-repeat fixed`,
+          background: `url(${require("../../Assets/img/photo4.jpg")}) center center/cover no-repeat fixed`,
         }}
       >
         <p className="panel__text panel__text--small panel__text--dark">

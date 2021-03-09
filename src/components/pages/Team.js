@@ -37,7 +37,7 @@ function Story() {
 
         <img
           className="panel__photo"
-          src={require("../../Assets/Photo18.jpeg")}
+          src={require("../../Assets/img/Photo18.jpeg")}
           alt="founder"
         ></img>
 
@@ -51,7 +51,7 @@ function Story() {
       <Panel
         class="panel--image panel--image-primary"
         style={{
-          background: `url(${require("../../Assets/photo10.jpg")}) center center/cover no-repeat`,
+          background: `url(${require("../../Assets/img/photo10.jpg")}) center center/cover no-repeat`,
         }}
       >
         <p class="panel__text panel__text--small panel__text--light">

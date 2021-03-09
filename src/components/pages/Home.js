@@ -1,10 +1,19 @@
 import React from "react";
 import "../../App.css";
 import HeroSection from "../HeroSection";
-import { Button } from "../Button";
 import Counter from "../Counter";
 import Panel from "../Panel";
 import Fade from "react-reveal/Fade";
+import { Button } from "@material-ui/core/";
+import { makeStyles } from "@material-ui/styles";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    "& > *": {
+      margin: theme.spacing(1),
+    },
+  },
+}));
 
 function Home() {
   return (
@@ -23,7 +32,7 @@ function Home() {
         />
         <Fade top>
           <img
-            src={require("../../Assets/VKWhite.png")}
+            src={require("../../Assets/img/VKWhite.png")}
             alt=""
             className="hero__logo"
           ></img>
@@ -36,21 +45,15 @@ function Home() {
         </p>
 
         <div className="hero__button-container">
-          <Button
-            buttonStyle="btn--outline-light"
-            buttonSize="btn--medium"
-            path="story"
-            type="link"
-          >
-            Learn More
+          <Button variant="contained" color="primary" size="large">
+            Button
           </Button>
-          <Button
-            buttonStyle="btn--primary"
-            buttonSize="btn--medium"
-            path="support"
-            type="link"
-          >
-            Get Involved
+          <Button variant="contained" color="info" size="large">
+            Button
+          </Button>
+
+          <Button variant="outlined" color="primary" size="large">
+            Button
           </Button>
         </div>
       </HeroSection>
@@ -80,7 +83,7 @@ function Home() {
       <Panel
         class="panel panel--image panel--image-dark"
         style={{
-          background: `url(${require("../../Assets/photo1.jpg")}) center center/cover no-repeat fixed`,
+          background: `url(${require("../../Assets/img/photo1.jpg")}) center center/cover no-repeat fixed`,
         }}
       >
         <Counter number={3500} label="Meals Served" />

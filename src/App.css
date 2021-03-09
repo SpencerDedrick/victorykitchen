@@ -14,36 +14,15 @@
 
 html {
   max-width: 100vw;
-  overflow-x: hidden;
-}
-.about,
-.ourwork {
-  display: flex;
-  min-height: 90vh;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
+.app {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 ul {
   list-style-type: none;
-}
-
-.support--btn {
-  font-size: 20px;
-  background-color: transparent;
-  border-radius: 2px;
-  padding: 12px 26px;
-  text-decoration: none;
-  color: #fff;
-  border: 1px solid #fff;
-  margin: 10px;
-}
-
-.support--btn:hover {
-  background: #fff;
-  color: #242424;
-  transition: all 0.3s ease-out;
 }
 
 @media screen and (max-width: 960px) {

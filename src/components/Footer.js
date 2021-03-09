@@ -79,7 +79,7 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/">
-              <img src={require("../Assets/VKLogoRed.png")} alt=""></img>
+              <img src={require("../Assets/img/VKLogoRed.png")} alt=""></img>
             </Link>
           </div>
           <small className="website-rights">Victory Kitchen Katy 2020</small>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Panel.scss";
 
 function Panel(props) {
-  /* let pic = "../Assets/photo1.jpg";
+  /* let pic = "../Assets/img/photo1.jpg";
   let image = () => {
     return require("");
   }; */

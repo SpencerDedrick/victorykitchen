@@ -11,7 +11,7 @@ video {
 }
 
 .hero-container {
-  /* background: url("../Assets/photo7.jpg") center center/cover no-repeat; */
+  /* background: url("../Assets/img/photo7.jpg") center center/cover no-repeat; */
   max-height: 90vh;
   width: 100%;
   display: flex;

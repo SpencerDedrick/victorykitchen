@@ -77,7 +77,7 @@ function Navbar() {
         <div className="navbar-container">
           <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img
-              src={require("../Assets/VKLogoWhite.png")}
+              src={require("../Assets/img/VKLogoWhite.png")}
               alt="Victory Kitchen"
             ></img>
           </NavLink>
