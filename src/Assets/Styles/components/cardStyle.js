@@ -1,5 +1,3 @@
-import { primaryColor, lightColor, darkColor } from "../kit";
-
 const cardStyle = {
   card: {
     border: "0",

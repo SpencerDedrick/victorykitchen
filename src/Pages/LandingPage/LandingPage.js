@@ -24,13 +24,11 @@ import DoingSection from "./Sections/DoingSection";
 import GoingSection from "./Sections/GoingSection";
 import GetInvolvedSection from "./Sections/GetInvolvedSection";
 
-const dashboardRoutes = [];
-
 const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
   const classes = useStyles();
-  const { ...rest } = props;
+
   return (
     <div>
       <Parallax filter image={require("../../Assets/img/landing2.jpg")}>

@@ -1,4 +1,4 @@
-import { cardTitle, title } from "../../kit";
+import { title } from "../../kit";
 import imagesStyle from "../../../Styles/imageStyles";
 import { primaryColor, lightColor, darkColor } from "../../kit";
 
@@ -21,9 +21,9 @@ const teamStyle = {
     marginLeft: "auto",
     marginRight: "auto",
   },
-  cardTitle: {
+  /*  cardTitle: {
     color: primaryColor,
-  },
+  }, */
   smallTitle: {
     color: primaryColor,
   },

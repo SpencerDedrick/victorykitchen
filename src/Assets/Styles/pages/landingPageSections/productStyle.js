@@ -15,7 +15,7 @@ const productStyle = {
   },
   description: {
     color: "#999",
-    color: darkColor,
+    darkColor: darkColor,
   },
 };
 

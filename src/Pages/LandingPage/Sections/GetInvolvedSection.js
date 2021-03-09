@@ -2,17 +2,15 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // nodejs library that concatenates classes
-import classNames from "classnames";
-import Counter from "../../../components/Counter";
+/* import classNames from "classnames";
+import Counter from "../../../components/Counter"; */
 
 // @material-ui/icons
-import KitchenIcon from "@material-ui/icons/Kitchen";
-import PersonIcon from "@material-ui/icons/Person";
-import FavoriteIcon from "@material-ui/icons/Favorite";
+
 // core components
 import GridContainer from "../../../components/GridContainer/GridContainer";
 import GridItem from "../../../components/GridContainer/GridItem";
-import InfoArea from "../../../components/InfoArea/InfoArea";
+
 import Button from "../../../components/CustomButtons/Button";
 
 import styles from "../../../Assets/Styles/pages/landingPageSections/productStyle";

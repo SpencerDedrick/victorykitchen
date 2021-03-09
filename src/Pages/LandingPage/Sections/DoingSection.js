@@ -5,19 +5,14 @@ import { makeStyles } from "@material-ui/core/styles";
 import classNames from "classnames";
 
 // @material-ui/icons
-import KitchenIcon from "@material-ui/icons/Kitchen";
-import PersonIcon from "@material-ui/icons/Person";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+
 import ImportContactsIcon from "@material-ui/icons/ImportContacts";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import BathtubIcon from "@material-ui/icons/Bathtub";
 // core components
 import GridContainer from "../../../components/GridContainer/GridContainer";
 import GridItem from "../../../components/GridContainer/GridItem";
-import InfoArea from "../../../components/InfoArea/InfoArea";
+
 import NavPills from "../../../components/NavPills/NavPills";
 
 import styles from "../../../Assets/Styles/pages/landingPageSections/profileStyle";
@@ -40,12 +35,12 @@ const useStyles = makeStyles(styles);
 
 export default function ProductSection(props) {
   const classes = useStyles();
-  const { ...rest } = props;
-  const imageClasses = classNames(
+  /*   const { ...rest } = props; */
+  /*   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
     classes.imgFluid
-  );
+  ); */
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div className={classes.section}>

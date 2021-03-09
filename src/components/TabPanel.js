@@ -7,7 +7,6 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
-import ImageCard from "./ImageCard";
 import Button from "@material-ui/core/Button";
 import Fade from "@material-ui/core/Fade";
 
@@ -125,6 +124,7 @@ export default function NavTabs() {
                 src={require("../Assets/img/photo1.jpg")}
                 width="100%"
                 className={classes.tabImage}
+                alt="..."
               ></img>
             </Grid>
             <Grid item className={classes.red}>
@@ -158,7 +158,11 @@ export default function NavTabs() {
             className={classes.tabGrid}
           >
             <Grid item className={classes.blue}>
-              <img src={require("../Assets/img/photo2.jpg")} width="100%"></img>
+              <img
+                src={require("../Assets/img/photo2.jpg")}
+                width="100%"
+                alt="..."
+              ></img>
             </Grid>
             <Grid item className={classes.red}>
               <Typography variant="h6">

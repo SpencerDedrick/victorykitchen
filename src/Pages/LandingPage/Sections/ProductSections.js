@@ -2,7 +2,7 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+
 import Counter from "../../../components/Counter";
 
 // @material-ui/icons
